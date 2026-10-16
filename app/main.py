@@ -18,7 +18,7 @@ from prometheus_client import (
 
 MOCK_MODE = os.environ.get("MOCK_MODE", "false").lower() == "true"
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
-DEFAULT_MODEL = os.environ.get("DEFAULT_MODEL", "llama-3.1-8b-instant")
+DEFAULT_MODEL = os.environ.get("DEFAULT_MODEL", "openai/gpt-oss-20b")
 
 if not MOCK_MODE and GROQ_API_KEY:
     from groq import Groq

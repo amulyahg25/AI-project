@@ -17,7 +17,7 @@ from collections import deque
 # CONFIG
 # ============================================================
 
-PROMETHEUS_URL        = os.environ.get("PROMETHEUS_URL", "http://prometheus-server.aiops.svc.cluster.local")
+PROMETHEUS_URL        = os.environ.get("PROMETHEUS_URL", "http://prometheus-server.monitoring.svc.cluster.local")
 CHECK_INTERVAL        = int(os.environ.get("CHECK_INTERVAL", "30"))
 DEDUP_WINDOW_SECONDS  = int(os.environ.get("DEDUP_WINDOW_SECONDS", "120"))
 
